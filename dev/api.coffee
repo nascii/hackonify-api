@@ -9,7 +9,8 @@ User = rootRequire 'routes/user'
 module.exports = (socket) ->  
 
   # users
-  socket.on 'user.create', (data) -> User.create(socket, data)
+  socket.on 'user.create', (data, cb) -> User.create(socket, data, cb)
+  socket.on 'user.tags.add', (data, cb) -> User.addTags(socket, data, cb)
 
   
   

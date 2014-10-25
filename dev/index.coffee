@@ -9,10 +9,13 @@ db = rootRequire "db"
 
 app = express()
 server = http.Server(app)
+app.all "/", (req, res) -> res.send 'lol'
 io = socket(server)
 
 api = rootRequire 'api'
-io.on 'connection', (socket) -> api(socket)
+io.on 'connection', (socket) -> 
+  logger.debug 'user connected'
+  api(socket)
 
 
 port = process.env.PORT || 7001

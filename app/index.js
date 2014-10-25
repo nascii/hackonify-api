@@ -16,11 +16,16 @@ app = express();
 
 server = http.Server(app);
 
+app.all("/", function(req, res) {
+  return res.send('lol');
+});
+
 io = socket(server);
 
 api = rootRequire('api');
 
 io.on('connection', function(socket) {
+  logger.debug('user connected');
   return api(socket);
 });
 
