@@ -18,6 +18,7 @@ module.exports = (socket, data, cb) ->
     callback
       'success': 1
       'sessionKey': sessionKey
+      'uid': user._id
   
   
 

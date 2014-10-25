@@ -16,7 +16,8 @@ module.exports = function(socket, data, cb) {
   }, function(err, user) {
     return callback({
       'success': 1,
-      'sessionKey': sessionKey
+      'sessionKey': sessionKey,
+      'uid': user._id
     });
   });
 };
