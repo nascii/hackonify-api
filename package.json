@@ -1,0 +1,40 @@
+{
+  "name": "brainstore",
+  "description": "RESTful server api for BrainStore",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node app/index.js"
+  },
+  "private": true,
+  "dependencies": {
+    "body-parser": "~1.2.0",
+    "express": "~4.3.0",
+    "gcs-signed-urls": "^1.0.2",
+    "keypair": "~1.0.0",
+    "log4js": "~0.6.16",
+    "mandrill-api": "~1.0.40",
+    "method-override": "~1.0.2",
+    "mongodb": "~1.4.5",
+    "mongoose": "~3.8.13",
+    "multipart": "~0.1.5",
+    "nodemailer": "~0.6.3",
+    "socket.io": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp-concat": "~2.2.0",
+    "gulp-clean": "~0.2.4",
+    "gulp-replace": "~0.3.0",
+    "gulp-plumber": "~0.6.1",
+    "gulp-coffee": "~1.4.3",
+    "gulp-shell": "~0.2.5",
+    "gulp-util": "~2.2.14",
+    "gulp-uglify": "~0.3.0",
+    "gulp-if": "~1.2.0",
+    "gulp-notify": "~1.2.5",
+    "gulp": "~3.6.2",
+    "gulp-cache": "~0.1.11",
+    "coffee-script": "~1.7.1",
+    "gulp-size": "~0.3.1",
+    "gulp-nodemon": "~1.0.4"
+  }
+}
